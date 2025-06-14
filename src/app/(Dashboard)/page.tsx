@@ -22,14 +22,14 @@ interface cardType {
 export default function Dashboard() {
   const cardData = [
     { title: " Total User", value: 40689, batch: HiMiniUsers, batchColor: '#8280FF', icon:TrendingUp, },
-    { title: " Total Order", value: 40689, batch: RiBox3Fill, batchColor: '#FEC53D', icon:TrendingUp, },
+    { title: " Total Order", value: 10293, batch: RiBox3Fill, batchColor: '#FEC53D', icon:TrendingUp, },
     { title: " Total Sales", value: 40689, batch: ChartLine,batchColor:'#4AD991', icon:TrendingUp, },
-    { title: " Total Pending", value: 40689, batch: History, batchColor: '#FF0000', icon:TrendingUp, },
+    { title: " Total Pending", value: 2040, batch: History, batchColor: '#FF0000', icon:TrendingUp, },
   ];
   return (
     <div className="h-dvh w-full">
       <h2 className="text-3xl font-bold">Dashboard</h2>
-      <div className="mt-10 flex flex-wrap flex-1/2 items-center justify-between ">
+      <div className="mt-10 flex flex-wrap flex-1/2 items-center justify-between gap-10">
         {cardData.map((card: cardType, i: number) => (
           <Card key={i} className="w-72">
             <CardHeader className="relative">
@@ -46,7 +46,7 @@ export default function Dashboard() {
                 <card.icon />
                 8.5%
               </span>{" "}
-              Up from yesterday
+              Up from yesterday 
             </CardFooter>
           </Card>
         ))}

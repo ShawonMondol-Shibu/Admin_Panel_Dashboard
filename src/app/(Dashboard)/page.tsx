@@ -10,6 +10,7 @@ import { HiMiniUsers } from "react-icons/hi2";
 import React from "react";
 import { ChartLine, History, TrendingUp } from "lucide-react";
 import { RiBox3Fill } from "react-icons/ri";
+import Chart from "@/components/shared/Chart";
 
 interface cardType {
   title: string;
@@ -51,6 +52,11 @@ export default function Dashboard() {
           </Card>
         ))}
       </div>
+
+<div className='p-10 bg-white rounded-2xl shadow mt-10'>
+<h2 className="text-2xl font-bold mb-10">Sales Details</h2>
+      <Chart/>
+</div>
     </div>
   );
 }

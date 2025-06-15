@@ -49,12 +49,7 @@ export default function Sidebar() {
     { name: "Table", icon: Grid3x3 },
   ];
   return (
-    <div className="bg-white py-5 h-dvh w-fit fixed top-0 ">
-      <h2 className="text-xl font-extrabold text-[var(--colorSkyBlue)] m-auto text-center">
-        Dash
-        <span className="text-black">Stack</span>
-      </h2>
-
+    <div className="bg-white py-5 h-dvh w-fit fixed top-0 left-0 mt-6">
       <div className="my-7 px-5">
         {sidebarData.map((sidebar: sidebarDataType, i: number) => (
           <Link

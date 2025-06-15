@@ -11,21 +11,51 @@ import React from "react";
 import { ChartLine, History, TrendingUp } from "lucide-react";
 import { RiBox3Fill } from "react-icons/ri";
 import Chart from "@/components/shared/Chart";
+import Deals from "@/components/shared/Deals";
 
 interface cardType {
   title: string;
   value: number;
   batch: React.ElementType;
   batchColor: string;
+  batchBg: string;
   icon: React.ElementType;
 }
 
 export default function Dashboard() {
   const cardData = [
-    { title: " Total User", value: 40689, batch: HiMiniUsers, batchColor: '#8280FF', icon:TrendingUp, },
-    { title: " Total Order", value: 10293, batch: RiBox3Fill, batchColor: '#FEC53D', icon:TrendingUp, },
-    { title: " Total Sales", value: 40689, batch: ChartLine,batchColor:'#4AD991', icon:TrendingUp, },
-    { title: " Total Pending", value: 2040, batch: History, batchColor: '#FF0000', icon:TrendingUp, },
+    {
+      title: " Total User",
+      value: 40689,
+      batch: HiMiniUsers,
+      batchColor: "#8280FF",
+      batchBg: "#8280ff3b",
+      icon: TrendingUp,
+    },
+    {
+      title: " Total Order",
+      value: 10293,
+      batch: RiBox3Fill,
+      batchColor: "#FEC53D",
+      batchBg: "#FEC53D3b",
+      icon: TrendingUp,
+    },
+    {
+      title: " Total Sales",
+      value: 40689,
+      batch: ChartLine,
+      batchColor: "#4AD991",
+      batchBg: "#4AD9913b",
+      icon: TrendingUp,
+    },
+    {
+      title: " Total Pending",
+      value: 2040,
+      batch: History,
+      batchColor: "#FF0000",
+      batchBg: "#FF00003b",
+      icon: TrendingUp,
+    },
   ];
   return (
     <div className="h-dvh w-full">
@@ -37,26 +67,39 @@ export default function Dashboard() {
               <CardTitle className="text-lg text-[var(--ring)]">
                 {card.title}
               </CardTitle>
-              <CardDescription className="bg-[#8280ff4b] w-fit p-4 rounded-3xl absolute top-0 right-5">
+              <CardDescription
+                style={{ background: card.batchBg }}
+                className={`w-fit p-4 rounded-3xl absolute top-0 right-5`}
+              >
                 <card.batch color={card.batchColor} size={32} />
               </CardDescription>
             </CardHeader>
-            <CardContent className="text-3xl font-bold">{card.value}</CardContent>
+            <CardContent className="text-3xl font-bold">
+              {card.value}
+            </CardContent>
             <CardFooter className="text-lg font-semibold flex items-center gap-1">
               <span className="flex items-center gap-2 text-[#00B69B]">
                 <card.icon />
                 8.5%
               </span>{" "}
-              Up from yesterday 
+              Up from yesterday
             </CardFooter>
           </Card>
         ))}
       </div>
 
-<div className='p-10 bg-white rounded-2xl shadow mt-10'>
-<h2 className="text-2xl font-bold mb-10">Sales Details</h2>
-      <Chart/>
-</div>
+      <div className="p-10 bg-white rounded-2xl shadow mt-10">
+        <div className="flex items-center justify-between mb-10">
+
+        <h2 className="text-2xl font-bold">Sales Details</h2>
+        <select name="" id="" className="border py-2 px-4">
+          <option value="october">October</option>
+        </select>
+        </div>
+        <Chart />
+      </div>
+
+      <Deals/>
     </div>
   );
 }

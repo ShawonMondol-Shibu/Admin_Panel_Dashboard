@@ -63,7 +63,7 @@ export default function Dashboard() {
       <h2 className="text-3xl font-bold">Dashboard</h2>
       <div className="mt-10 flex flex-wrap flex-1/2 items-center justify-between gap-10">
         {cardData.map((card: cardType, i: number) => (
-          <Card key={i} className="w-72">
+          <Card key={i} className="w-72 flex-1/2 lg:flex-none">
             <CardHeader className="relative">
               <CardTitle className="text-lg text-[var(--ring)]">
                 {card.title}

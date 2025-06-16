@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import "@/app/globals.css";
-import Navbar from "@/components/shared/Navbar";
+// import Navbar from "@/components/shared/Navbar";
 import Sidebar from "@/components/shared/Sidebar";
 import { ThemeProvider } from "@/components/theme-provider";
 
@@ -34,12 +34,12 @@ export default function RootLayout({
             disableTransitionOnChange
           >
 
-        <Navbar/>
+        {/* <Navbar/> */}
+        <Sidebar/>
         <div className="w-[calc(100%-230px)] float-right h-[calc(100%-20rem)] px-10 pt-8 mt-16">
           
         {children}
         </div>
-        <Sidebar/>
           </ThemeProvider>
       </body>
     </html>

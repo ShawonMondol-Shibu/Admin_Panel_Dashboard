@@ -8,8 +8,7 @@ interface languageType {
   name: string;
   icon: string;
 }
-
-export default function Navbar() {
+export default function Navbar({pl}:{pl:string}) {
   const languages = [
     { name: "English", icon: "🇬🇧" },
     { name: "Bangla", icon: "🇧🇩" },
@@ -19,12 +18,7 @@ export default function Navbar() {
     { name: "Egypt", icon: "🇪🇬" },
   ];
   return (
-    <div className="flex items-center justify-between px-5 py-3 bg-white border-b fixed top-0 left-0 w-full backdrop-blur-md z-[1]">
-      <h2 className="text-xl font-extrabold text-center text-[var(--colorSkyBlue)] w-fit ml-10">
-        Dash
-        <span className="text-black">Stack</span>
-      </h2>
-
+    <div style={{paddingLeft: pl}}  className="flex items-center justify-between px-5 py-3 bg-white border-b fixed top-0 left-0 w-full ">
       <div className="flex items-center border rounded-2xl px-2 w-[50%] bg-[#F5F6FA]">
         <Search color="gray" size={20} />
         <Input

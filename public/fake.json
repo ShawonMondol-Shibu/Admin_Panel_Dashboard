@@ -1,3 +1,85 @@
 {
+    "products": [
+        {
+            "name": "Apple Watch",
+            "image": "/images/Bitmap.png",
+            "totalAmount": "$250.00",
+            "status": "Delivered",
+            "location": "6096 Marjolaine Landing",
+            "piece": 423,
+            "date_time": "12.09.2019 - 12.53 PM"
+        },
+        {
+            "name": "Apple Watch",
+            "image": "/images/Bitmap.png",
+            "totalAmount": "$250.00",
+            "status": "Pending",
+            "location": "6096 Marjolaine Landing",
+            "piece": 423,
+            "date_time": "12.09.2019 - 12.53 PM"
+        },
+        {
+            "name": "Apple Watch",
+            "image": "/images/Bitmap.png",
+            "totalAmount": "$250.00",
+            "status": "Rejected",
+            "location": "6096 Marjolaine Landing",
+            "piece": 423,
+            "date_time": "12.09.2019 - 12.53 PM"
+        },
+        {
+            "name": "Apple Watch",
+            "image": "/images/Bitmap.png",
+            "totalAmount": "$250.00",
+            "status": "Delivered",
+            "location": "6096 Marjolaine Landing",
+            "piece": 423,
+            "date_time": "12.09.2019 - 12.53 PM"
+        },
+        {
+            "name": "Apple Watch",
+            "image": "/images/Bitmap.png",
+            "totalAmount": "$250.00",
+            "status": "Pending",
+            "location": "6096 Marjolaine Landing",
+            "piece": 423,
+            "date_time": "12.09.2019 - 12.53 PM"
+        },
+        {
+            "name": "Apple Watch",
+            "image": "/images/Bitmap.png",
+            "totalAmount": "$250.00",
+            "status": "Rejected",
+            "location": "6096 Marjolaine Landing",
+            "piece": 423,
+            "date_time": "12.09.2019 - 12.53 PM"
+        },
+        {
+            "name": "Apple Watch",
+            "image": "/images/Bitmap.png",
+            "totalAmount": "$34,295",
+            "status": "Delivered",
+            "location": "6096 Marjolaine Landing",
+            "piece": 423,
+            "date_time": "12.09.2019 - 12.53 PM"
+        },
+          {
+            "name": "Apple Watch",
+            "image": "/images/Bitmap.png",
+            "totalAmount": "$250.00",
+            "status": "Pending",
+            "location": "6096 Marjolaine Landing",
+            "piece": 423,
+            "date_time": "12.09.2019 - 12.53 PM"
+        }, {
+            "name": "Apple Watch",
+            "image": "/images/Bitmap.png",
+            "totalAmount": "$250.00",
+            "status": "Rejected",
+            "location": "6096 Marjolaine Landing",
+            "piece": 423,
+            "date_time": "12.09.2019 - 12.53 PM"
+        }
+    ]
     
 }

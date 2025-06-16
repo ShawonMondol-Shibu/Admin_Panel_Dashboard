@@ -11,7 +11,8 @@ import React from "react";
 import { ChartLine, History, TrendingUp } from "lucide-react";
 import { RiBox3Fill } from "react-icons/ri";
 import Chart from "@/components/shared/Chart";
-import Deals from "@/components/shared/Deals";
+import Deals from "@/components/shared/deals/Deals";
+import Revenue from "@/components/shared/Revenue";
 
 interface cardType {
   title: string;
@@ -92,7 +93,7 @@ export default function Dashboard() {
         <div className="flex items-center justify-between mb-10">
 
         <h2 className="text-2xl font-bold">Sales Details</h2>
-        <select name="" id="" className="border py-2 px-4">
+        <select name="" id="" className="border py-2 px-4 rounded-md">
           <option value="october">October</option>
         </select>
         </div>
@@ -100,6 +101,7 @@ export default function Dashboard() {
       </div>
 
       <Deals/>
+      <Revenue/>
     </div>
   );
 }

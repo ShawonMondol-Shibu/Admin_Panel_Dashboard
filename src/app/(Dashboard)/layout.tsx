@@ -5,12 +5,10 @@ import "@/app/globals.css";
 import Sidebar from "@/components/shared/Sidebar";
 import { ThemeProvider } from "@/components/theme-provider";
 
-
 const nunitoSans = Nunito_Sans({
   variable: "--font-nunito-sans",
-  subsets:["latin"]
-})
-
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Admin Panel Dashboard",
@@ -23,25 +21,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${nunitoSans.variable} antialiased bg-[#F5F6FA]`}
+    <div className={`${nunitoSans.variable} antialiased bg-[#F5F6FA]`}>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="light"
+        enableSystem
+        disableTransitionOnChange
       >
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="light"
-            enableSystem
-            disableTransitionOnChange
-          >
-
         {/* <Navbar/> */}
-        <Sidebar/>
+        <Sidebar />
         <div className="w-[calc(100%-230px)] float-right h-[calc(100%-20rem)] px-10 pt-8 mt-16">
-          
-        {children}
+          {children}
         </div>
-          </ThemeProvider>
-      </body>
-    </html>
+      </ThemeProvider>
+    </div>
   );
 }

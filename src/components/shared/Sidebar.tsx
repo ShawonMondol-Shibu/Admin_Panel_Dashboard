@@ -24,10 +24,12 @@ import Navbar from "./Navbar";
 
 interface sidebarDataType {
   name: string;
+  href: string;
   icon: React.ElementType;
 }
 interface pagesType {
   name: string;
+  href: string;
   icon: React.ElementType;
 }
 
@@ -36,23 +38,23 @@ export default function Sidebar() {
   const toggle = () => setisOpen(!isOpen);
 
   const sidebarData = [
-    { name: "Dashboard", icon: Gauge },
-    { name: "Products", icon: Grid2X2 },
-    { name: "Favorites", icon: Heart },
-    { name: "Inbox", icon: MessagesSquare },
-    { name: "Order Lists", icon: ListChecks },
-    { name: "Product Stock", icon: Rows3 },
+    { name: "Dashboard", icon: Gauge, href: "/" },
+    { name: "Products", icon: Grid2X2, href: "/products" },
+    { name: "Favorites", icon: Heart, href: "/favorites" },
+    { name: "Inbox", icon: MessagesSquare, href: "/inbox" },
+    { name: "Order Lists", icon: ListChecks, href: "/order" },
+    { name: "Product Stock", icon: Rows3, href: "/productStock" },
   ];
 
   const pagesData = [
-    { name: "Pricing", icon: Gift },
-    { name: "Calender", icon: CalendarDays },
-    { name: "To-Do", icon: Clipboard },
-    { name: "Contact", icon: Contact },
-    { name: "Invoice", icon: Banknote },
-    { name: "Ui Elements", icon: ChartNoAxesColumn },
-    { name: "Team", icon: UserRound },
-    { name: "Table", icon: Grid3x3 },
+    { name: "Pricing", icon: Gift, href: "/pricing" },
+    { name: "Calender", icon: CalendarDays, href: "/calender" },
+    { name: "To-Do", icon: Clipboard, href: "/todo" },
+    { name: "Contact", icon: Contact, href: "/contact" },
+    { name: "Invoice", icon: Banknote, href: "/invoice" },
+    { name: "Ui Elements", icon: ChartNoAxesColumn, href: "/uiElements" },
+    { name: "Team", icon: UserRound, href: "/team" },
+    { name: "Table", icon: Grid3x3, href: "/table" },
   ];
   return (
     <>
@@ -60,7 +62,7 @@ export default function Sidebar() {
       <div
         className={`bg-white py-5 ${
           isOpen ? "px-0" : "px-5"
-        } h-dvh w-fit fixed top-0 left-0`}
+        } h-screen w-fit fixed top-0 left-0`}
       >
         <h2 className="text-xl font-extrabold text-center text-[var(--colorSkyBlue)] m-auto w-full flex items-center justify-center gap-10">
           <span style={{ display: isOpen ? "none" : "block" }}>
@@ -73,7 +75,7 @@ export default function Sidebar() {
           {sidebarData.map((sidebar: sidebarDataType, i: number) => (
             <Link
               key={i}
-              href={"/"}
+              href={sidebar.href}
               className={`flex items-start gap-4 px-6 py-3 ${
                 isOpen ? "w-fit" : "w-48"
               } rounded-lg hover:bg-blue-500 hover:text-white transition-colors duration-300 ease-linear`}
@@ -93,7 +95,7 @@ export default function Sidebar() {
           {pagesData.map((pages: pagesType, i: number) => (
             <Link
               key={i}
-              href={"#"}
+              href={pages.href}
               className={`flex items-start gap-2 px-6 py-3 ${
                 isOpen ? "w-fit" : "w-48"
               } rounded-lg hover:bg-blue-500 hover:text-white transition-colors duration-300 ease-linear`}
@@ -110,7 +112,7 @@ export default function Sidebar() {
 
         <div className=" py-2 m-auto">
           <Link
-            href={"#"}
+            href={"/setting"}
             className={`flex items-start gap-2 px-6 py-3 ${
               isOpen ? "w-fit" : "w-48"
             } rounded-lg hover:bg-blue-500 hover:text-white transition-colors duration-300 ease-linear`}

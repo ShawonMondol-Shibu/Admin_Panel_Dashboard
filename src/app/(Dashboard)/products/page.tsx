@@ -11,7 +11,7 @@ export default function Page() {
       <Slider/>
       <div className="flex flex-wrap justify-center items-center gap-10 my-10 overflow-x-scroll ">
         {
-items.map((item, i)=><Card key={i}/>)
+items.map((item, i)=><Card key={i} image='/images/watch_black.png' title='Apple Watch Serice 4' price={120.00} btnText='Edit Order'/>)
         }
         
       </div>

@@ -1,16 +1,16 @@
-'use client'
+"use client";
 import React from "react";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-//   CarouselNext,
-//   CarouselPrevious,
+  //   CarouselNext,
+  //   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { Button } from "../ui/button";
 export default function Slider() {
-  const sliderData = [1, 2, 3,4,5,6,7,9,10];
+  const sliderData = [1, 2, 3, 4, 5, 6, 7, 9, 10];
   return (
     <Carousel
       plugins={[

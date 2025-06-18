@@ -65,9 +65,9 @@ export default function Page() {
 {/* Labels are here */}
             <div className="mt-5">
               <h2 className="text-base font-bold">Label</h2>
-              <div className="grid">
+              <div className="py-4">
                 {
-                  labels.map((label:labelType, i:number)=><Link key={i} href={''} className="p-5 flex items-center gap-2 text-sm font-bold">
+                  labels.map((label:labelType, i:number)=><Link key={i} href={''} className="p-4 flex items-center gap-2 text-sm font-bold hover:bg-[#4880FF4b] rounded-lg">
                 <Square size={16} color={label.color}/>{label.name}</Link>)
                 }
                 

@@ -1,7 +1,10 @@
 import React from 'react'
+import PriceCard from './PriceCard'
 
 export default function Page() {
   return (
-    <div>Page</div>
+    <div>
+      <PriceCard/>
+    </div>
   )
 }

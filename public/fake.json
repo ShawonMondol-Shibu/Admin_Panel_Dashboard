@@ -82,79 +82,78 @@
             "date_time": "12.09.2019 - 12.53 PM"
         }
     ],
-        "teams": [
-            {
-                "image": "/images/admin.png",
-                "name": "Jason Price",
-                "title": "Admin",
-                "email": "janick_parisian@yahoo.com"
-            },
-            {
-                "image": "/images/ceo.png",
-                "name": "Jukkoe Sisao",
-                "title": "CEO",
-                "email": "sibyl_kozey@gmail.com"
-            },
-            {
-                "image": "/images/cto.png",
-                "name": "Harriet King",
-                "title": "CTO",
-                "email": "nadia_block@hotmail.com"
-            },
-            {
-                "image": "/images/lead.png",
-                "name": "Lenora Benson",
-                "title": "Lead",
-                "email": "feil.wallace@kunde.us"
-            },
-            {
-                "image": "/images/strategist.png",
-                "name": "Olivia Reese",
-                "title": "Strategist",
-                "email": "kemmer.hattie@cremin.us"
-            },
-            {
-                "image": "/images/ceo1.png",
-                "name": "Bertha Valdez",
-                "title": "CEO",
-                "email": "loraine.koelpin@tromp.io"
-            },
-            {
-                "image": "/images/marketer.png",
-                "name": "Harriett Payne",
-                "title": "Digital Marketer",
-                "email": "nannie_west@estrella.tv"
-            },
-            {
-                "image": "/images/social.png",
-                "name": "George Bryant",
-                "title": "Social Media",
-                "email": "delmer.kling@gmail.com"
-            },
-            {
-                "image": "/images/strategist1.png",
-                "name": "Lily French",
-                "title": "Strategist",
-                "email": "lucienne.herman@hotmail.com"
-            },
-            {
-                "image": "/images/ceo2.png",
-                "name": "Howard Adkins",
-                "title": "CEO",
-                "email": "wiegand.leonor@herman.us"
-            },
-            {
-                "image": "/images/marketer1.png",
-                "name": "Earl Bowman",
-                "title": "Digital Marketer",
-                "email": "waino_altenwerth@nicolette.tv"
-            },
-            {
-                "image": "/images/social1.png",
-                "name": "Patrick Padilla",
-                "title": "Social Media",
-                "email": "octavia.nienow@gleichner.net"
-            }
-        ]
-            
+    "teams": [
+        {
+            "image": "/images/admin.png",
+            "name": "Jason Price",
+            "title": "Admin",
+            "email": "janick_parisian@yahoo.com"
+        },
+        {
+            "image": "/images/ceo.png",
+            "name": "Jukkoe Sisao",
+            "title": "CEO",
+            "email": "sibyl_kozey@gmail.com"
+        },
+        {
+            "image": "/images/cto.png",
+            "name": "Harriet King",
+            "title": "CTO",
+            "email": "nadia_block@hotmail.com"
+        },
+        {
+            "image": "/images/lead.png",
+            "name": "Lenora Benson",
+            "title": "Lead",
+            "email": "feil.wallace@kunde.us"
+        },
+        {
+            "image": "/images/strategist.png",
+            "name": "Olivia Reese",
+            "title": "Strategist",
+            "email": "kemmer.hattie@cremin.us"
+        },
+        {
+            "image": "/images/ceo1.png",
+            "name": "Bertha Valdez",
+            "title": "CEO",
+            "email": "loraine.koelpin@tromp.io"
+        },
+        {
+            "image": "/images/marketer.png",
+            "name": "Harriett Payne",
+            "title": "Digital Marketer",
+            "email": "nannie_west@estrella.tv"
+        },
+        {
+            "image": "/images/social.png",
+            "name": "George Bryant",
+            "title": "Social Media",
+            "email": "delmer.kling@gmail.com"
+        },
+        {
+            "image": "/images/strategist1.png",
+            "name": "Lily French",
+            "title": "Strategist",
+            "email": "lucienne.herman@hotmail.com"
+        },
+        {
+            "image": "/images/ceo2.png",
+            "name": "Howard Adkins",
+            "title": "CEO",
+            "email": "wiegand.leonor@herman.us"
+        },
+        {
+            "image": "/images/marketer1.png",
+            "name": "Earl Bowman",
+            "title": "Digital Marketer",
+            "email": "waino_altenwerth@nicolette.tv"
+        },
+        {
+            "image": "/images/social1.png",
+            "name": "Patrick Padilla",
+            "title": "Social Media",
+            "email": "octavia.nienow@gleichner.net"
+        }
+    ]
 }

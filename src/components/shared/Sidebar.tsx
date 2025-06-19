@@ -62,7 +62,7 @@ export default function Sidebar() {
       <div
         className={`bg-white py-5 ${
           isOpen ? "px-0" : "px-5"
-        } h-screen w-fit fixed top-0 left-0`}
+        } h-dvw w-fit fixed top-0 left-0 transition-all duration-300 ease-linear`}
       >
         <h2 className="text-xl font-extrabold text-center text-[var(--colorSkyBlue)] m-auto w-full flex items-center justify-center gap-10">
           <span style={{ display: isOpen ? "none" : "block" }}>
@@ -78,7 +78,7 @@ export default function Sidebar() {
               href={sidebar.href}
               className={`flex items-start gap-4 px-6 py-3 ${
                 isOpen ? "w-fit" : "w-48"
-              } rounded-lg hover:bg-blue-500 hover:text-white transition-colors duration-300 ease-linear`}
+              } rounded-lg hover:bg-blue-500 hover:text-white transition-colors duration-300 ease-linear`} 
             >
               <sidebar.icon />
               <span style={{ display: isOpen ? "none" : "block" }}>

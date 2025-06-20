@@ -18,7 +18,7 @@ export default function Navbar() {
     { name: "Egypt", icon: "🇪🇬" },
   ];
   return (
-    <nav  className="flex items-center justify-between bg-white w-full">
+    <nav className="flex items-center justify-between bg-white w-full">
       <div className="flex items-center border rounded-2xl px-2 w-[50%] bg-[#F5F6FA]">
         <Search color="gray" size={20} />
         <Input

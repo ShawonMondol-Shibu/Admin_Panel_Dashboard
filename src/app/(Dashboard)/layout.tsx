@@ -1,18 +1,8 @@
 import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import "@/app/globals.css";
-// import Navbar from "@/components/shared/Navbar";
-// import Sidebar from "@/components/shared/Sidebar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { AppSidebar } from "@/components/app-sidebar";
-// import {
-//   Breadcrumb,
-//   BreadcrumbList,
-//   BreadcrumbItem,
-//   BreadcrumbLink,
-//   BreadcrumbSeparator,
-//   BreadcrumbPage,
-// } from "@/components/ui/breadcrumb";
 import {
   SidebarProvider,
   SidebarInset,
@@ -54,27 +44,10 @@ export default function RootLayout({
                   orientation="vertical"
                   className="mr-2 data-[orientation=vertical]:h-4"
                 />
-                {/* <Breadcrumb>
-                  <BreadcrumbList>
-                    <BreadcrumbItem className="hidden md:block">
-                      <BreadcrumbLink href="#">
-                        Building Your Application
-                      </BreadcrumbLink>
-                    </BreadcrumbItem>
-                    <BreadcrumbSeparator className="hidden md:block" />
-                    <BreadcrumbItem>
-                      <BreadcrumbPage>Data Fetching</BreadcrumbPage>
-                    </BreadcrumbItem>
-                  </BreadcrumbList>
-                </Breadcrumb> */}
-                <Navbar/>
+                <Navbar />
               </div>
             </header>
-<div className="p-10">
-
-
-            {children}
-</div>
+            <div className="p-10">{children}</div>
           </SidebarInset>
         </SidebarProvider>
       </ThemeProvider>

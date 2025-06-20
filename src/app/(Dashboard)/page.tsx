@@ -13,8 +13,6 @@ import { RiBox3Fill } from "react-icons/ri";
 import Chart from "@/components/shared/Chart";
 import Deals from "@/components/shared/deals/Deals";
 import Revenue from "@/components/shared/Revenue";
-// import Script from "next/script";
-
 
 interface cardType {
   title: string;
@@ -24,7 +22,6 @@ interface cardType {
   batchBg: string;
   icon: React.ElementType;
 }
-
 
 export default function Page() {
   const cardData = [
@@ -61,11 +58,10 @@ export default function Page() {
       icon: TrendingUp,
     },
   ];
-  
+
   return (
     <div className="h-dvh w-full">
-   
-   {/* <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
+      {/* <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
       <div className="grid auto-rows-min gap-4 md:grid-cols-3">
         <div className="bg-muted/50 aspect-video rounded-xl" />
         <div className="bg-muted/50 aspect-video rounded-xl" />

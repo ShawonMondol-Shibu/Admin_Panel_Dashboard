@@ -8,7 +8,7 @@ export default function Page() {
     <div>
       <h1 className="text-3xl font-bold mb-8">Products</h1>
       <Slider />
-      <div className="flex flex-wrap justify-center items-center gap-10 my-10 overflow-x-scroll ">
+      <div className="flex flex-wrap justify-center items-center gap-10 my-10">
         {items.map((item, i) => (
           <Card
             key={i}

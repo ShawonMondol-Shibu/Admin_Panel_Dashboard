@@ -8,7 +8,7 @@ interface languageType {
   name: string;
   icon: string;
 }
-export default function Navbar({pl}:{pl:string}) {
+export default function Navbar() {
   const languages = [
     { name: "English", icon: "🇬🇧" },
     { name: "Bangla", icon: "🇧🇩" },
@@ -18,7 +18,7 @@ export default function Navbar({pl}:{pl:string}) {
     { name: "Egypt", icon: "🇪🇬" },
   ];
   return (
-    <div style={{paddingLeft: pl}}  className="flex items-center justify-between px-5 py-3 bg-white border-b fixed top-0 left-0 w-full ">
+    <nav  className="flex items-center justify-between bg-white w-full">
       <div className="flex items-center border rounded-2xl px-2 w-[50%] bg-[#F5F6FA]">
         <Search color="gray" size={20} />
         <Input
@@ -67,6 +67,6 @@ export default function Navbar({pl}:{pl:string}) {
           ></select>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }

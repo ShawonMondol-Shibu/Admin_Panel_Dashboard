@@ -20,7 +20,6 @@ import {
 import Link from "next/link";
 import React, { useState } from "react";
 import { RiMenu4Fill } from "react-icons/ri";
-import Navbar from "./Navbar";
 
 interface sidebarDataType {
   name: string;
@@ -58,7 +57,6 @@ export default function Sidebar() {
   ];
   return (
     <>
-      <Navbar pl={isOpen ? "pl-0" : "pl-80"} />
       <div
         className={`bg-white py-5 ${
           isOpen ? "px-0" : "px-5"

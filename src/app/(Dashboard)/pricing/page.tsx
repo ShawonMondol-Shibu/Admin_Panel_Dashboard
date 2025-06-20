@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <div>
       <h2 className="text-2xl font-bold mb-10">Pricing</h2>
-      <div className="flex items-center justify-center gap-10">
+      <div className="flex flex-wrap items-center justify-center gap-10">
         {Array.from({ length: 3 }).map((i, _) => (
           <PriceCard key={_} />
         ))}

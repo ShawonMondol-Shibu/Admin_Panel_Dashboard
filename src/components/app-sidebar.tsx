@@ -61,7 +61,7 @@ const data = {
   navMain: [
     {
       title: "Dashboard",
-      url: "/home",
+      url: "/",
       icon: Gauge,
       isActive: true,
     },

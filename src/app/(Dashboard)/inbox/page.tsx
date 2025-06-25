@@ -10,6 +10,8 @@ import {
 import { TbMessageCircleCog } from "react-icons/tb";
 import Link from "next/link";
 import React from "react";
+import { Button } from "@/components/ui/button";
+import Messages from "./Messages";
 
 interface itemType {
   name: string;
@@ -46,10 +48,11 @@ export default function Page() {
   return (
     <div>
       <h1 className="text-3xl font-bold">Inbox</h1>
-      <div className="mt-10">
-        <div className="bg-white w-72 p-6 rounded-2xl shadow">
+      <div className="mt-10 flex flex-nowrap gap-10 items-center">
+        <div className="bg-white h-screen w-72 p-6 rounded-2xl shadow">
+          <Button variant={'default'} className="w-full bg-[var(--colorSkyBlue)]">+ Compose</Button>
           {/* My Mails are here */}
-          <div>
+          <div className="mt-5">
             <h2 className="text-base font-bold">My Email</h2>
             <div className="mt-4">
               {myMails.map((item: itemType, i: number) => (
@@ -83,7 +86,13 @@ export default function Page() {
                 </Link>
               ))}
             </div>
+            <Button variant={'ghost'} size={'lg'}> + Create New Label</Button>
           </div>
+        </div>
+
+        {/* Messages Output */}
+        <div className="h-screen flex-1/2 bg-white rounded-2xl shadow">
+<Messages/>
         </div>
       </div>
     </div>

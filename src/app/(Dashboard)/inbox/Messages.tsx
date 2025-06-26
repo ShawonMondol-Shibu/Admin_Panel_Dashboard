@@ -29,8 +29,6 @@ export default function Messages() {
               key={_}
               variant={"secondary"}
               size={"icon"}
-              className=""
-              asChild
             >
               <Icon size={16} className="" />
             </Button>
@@ -47,11 +45,11 @@ export default function Messages() {
           >
             <div className="flex items-center gap-5">
               <Checkbox />
-              <Star size={20} />
+              <Star size={20} className="hover:stroke-amber-400 hover:fill-amber-400" />
             </div>
             <span className="text-sm font-bold">Jullu Jalal</span>
             <span className="flex flex-1/2 items-center gap-4 text-sm font-semibold">
-              <Badge className="text-xs font-semibold text-[var(--badgePrimary)] bg-[var(--badgePrimary-500)]">Primary</Badge>
+              <Badge className="text-xs font-semibold text-(--badgePrimary) bg-teal-100">Primary</Badge>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </span> 
 

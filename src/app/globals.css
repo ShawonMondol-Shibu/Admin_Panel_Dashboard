@@ -79,6 +79,10 @@
   --sidebar-ring: oklch(0.708 0 0);
   --colorSkyBlue:oklch(62.993% 0.19839 263.768);
   --colorWhite: #F5F6FA;
+  --badgePrimary: #00B69B;
+  --badgeWork: #FD9A56;
+  --badgeFriends: #D456FD;
+  --badgeSocial: #5A8CFF;
 }
 
 .dark {

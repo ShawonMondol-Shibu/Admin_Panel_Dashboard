@@ -92,7 +92,7 @@ export default function Page() {
 
         {/* Messages Output */}
         <div className="h-screen flex-1/2 bg-white rounded-2xl shadow">
-<Messages/>
+          <Messages />
         </div>
       </div>
     </div>

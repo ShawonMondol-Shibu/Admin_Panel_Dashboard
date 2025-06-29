@@ -6,7 +6,7 @@ export default function OrderType() {
     return (
         <>
             <Popover>
-                <PopoverTrigger className='flex gap-5 items-center'>Order Type <ChevronDown /> </PopoverTrigger>
+                <PopoverTrigger className='flex gap-2 items-center'>Order Type <ChevronDown /> </PopoverTrigger>
                 <PopoverContent>
                     <h2 className='text-lg font-bold'>Select Order Type</h2>
                 </PopoverContent>

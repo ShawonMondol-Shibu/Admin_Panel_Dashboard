@@ -6,7 +6,7 @@ export default function OrderStatus() {
     return (
         <>
             <Popover>
-                <PopoverTrigger className='flex gap-5 items-center'>Order Status <ChevronDown /> </PopoverTrigger>
+                <PopoverTrigger className='flex gap-2 items-center'>Order Status <ChevronDown /> </PopoverTrigger>
                 <PopoverContent>
                     hello
                 </PopoverContent>

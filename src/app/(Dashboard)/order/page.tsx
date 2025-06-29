@@ -1,38 +1,30 @@
-import CalendarFilter from "@/components/ui/CalendarFilter";
-import { ChevronDown, Funnel } from "lucide-react";
+'use client'
+import { Funnel } from "lucide-react";
 import React from "react";
 import OrderType from "./OrderType";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
 import OrderStatus from "./OrderStatus";
 import ResetFilter from "./ResetFilter";
-import { OrderList } from "./data/List";
-import { columns } from "./data/columns";
-import { users } from "./data/data";
+import { OrderList } from "./order-data/List";
+import { columns } from "./order-data/columns";
+import { users } from "./order-data/data";
+import { DatePicker } from "@/components/shared/DatePicker";
 
 export default function Page() {
   return (
     <>
-    <div className="bg-white w-fit px-4 py-2 flex gap-5 items-center text-sm font-bold rounded-2xl  border">
-      <span className="flex gap-5 items-center text-sm font-bold">
-        <Funnel size={16} />
-        Filter By
-      </span>
-      <Popover>
-        <PopoverTrigger className="flex gap-5 items-center">Date <ChevronDown/> </PopoverTrigger>
-        <PopoverContent>
-          <CalendarFilter />
-        </PopoverContent>
-      </Popover>
-      <OrderType />
-      <OrderStatus/>
-      <ResetFilter/>
-    </div>
+    <h1 className="text-3xl font-bold">Order List</h1>
+      <div className="bg-white w-fit px-4 py-2 mt-10 flex gap-5 items-center text-sm font-bold rounded-2xl  border">
+        <span className="flex gap-5 items-center text-sm font-bold">
+          <Funnel size={16} />
+          Filter By
+        </span>
+        <DatePicker />
+        <OrderType />
+        <OrderStatus />
+        <ResetFilter />
+      </div>
 
-    <OrderList columns={columns} data={users}/>
+      <OrderList columns={columns} data={users} />
     </>
   );
 }

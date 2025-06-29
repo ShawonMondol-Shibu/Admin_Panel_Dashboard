@@ -1,4 +1,4 @@
-'use client';
+
 
 import {
   useReactTable,
@@ -21,9 +21,9 @@ export function OrderList<TData, TValue>({ columns, data }: DataTableProps<TData
   });
 
   return (
-    <div className="rounded-md border overflow-x-auto">
+    <div className="rounded-2xl border overflow-x-auto mt-10 bg-white ">
       <Table>
-        <TableHeader className='px-10'>
+        <TableHeader >
           {table.getHeaderGroups().map(headerGroup => (
             <TableRow key={headerGroup.id}>
               {headerGroup.headers.map(header => (

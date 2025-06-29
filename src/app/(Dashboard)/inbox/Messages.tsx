@@ -38,7 +38,7 @@ export default function Messages() {
 
       {/* Messages Display Section */}
       <div className=" overflow-hidden">
-        {Array.from({length: 10}).map((item, i: number) => (
+        {Array.from({ length: 10 }).map((item, i: number) => (
           <div
             key={i}
             className="flex items-center justify-center gap-10 w-full p-5 border-b "
@@ -51,7 +51,7 @@ export default function Messages() {
             <span className="flex flex-1/2 items-center gap-4 text-sm font-semibold">
               <Badge className="text-xs font-semibold text-(--badgePrimary) bg-teal-100">Primary</Badge>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </span> 
+            </span>
 
             <span>8:38AM</span>
           </div>

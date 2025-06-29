@@ -9,6 +9,9 @@ import {
 } from "@/components/ui/popover";
 import OrderStatus from "./OrderStatus";
 import ResetFilter from "./ResetFilter";
+import { OrderList } from "./data/List";
+import { columns } from "./data/columns";
+import { users } from "./data/data";
 
 export default function Page() {
   return (
@@ -29,7 +32,7 @@ export default function Page() {
       <ResetFilter/>
     </div>
 
-
+    <OrderList columns={columns} data={users}/>
     </>
   );
 }

@@ -31,10 +31,10 @@ export function Details() {
   return (
     <Table>
       <TableHeader className="text-base bg-[#F1F4F9] p-5 rounded-2xl">
-        <TableRow className="" >
-          <TableHead className="">Product Name</TableHead>
-          <TableHead>Location</TableHead>
-          <TableHead>Date - Time</TableHead>
+        <TableRow >
+          <TableHead >Product Name</TableHead>
+          <TableHead className="text-center">Location</TableHead>
+          <TableHead className="text-center">Date - Time</TableHead>
           <TableHead className="text-center">Piece</TableHead>
           <TableHead className="text-center">Amount</TableHead>
           <TableHead className="text-center">Status</TableHead>
@@ -53,12 +53,9 @@ export function Details() {
           } = product;
           return (
             <TableRow key={i} className="text-base">
-              <TableCell className="font-medium flex items-center gap-4">
-                <Image src={image} alt={name} width={36} height={36} />
-                {name}
-              </TableCell>
-              <TableCell>{location}</TableCell>
-              <TableCell>{date_time}</TableCell>
+              <TableCell className="font-medium  text-center"><Image src={image} alt={name} width={36} height={36} />{name}</TableCell>
+              <TableCell className="text-center">{location}</TableCell>
+              <TableCell className="text-center">{date_time}</TableCell>
               <TableCell className="text-center">{piece}</TableCell>
               <TableCell className="text-center">{totalAmount}</TableCell>
               <TableCell className="text-center" > <span className={`text-center text-white py-2 px-5 w-[100px] font-semibold ${status=='Delivered'?'bg-green-500': status == "Pending"?'bg-amber-400': 'bg-red-500'} w-fit rounded-2xl`}>{status}</span> </TableCell>

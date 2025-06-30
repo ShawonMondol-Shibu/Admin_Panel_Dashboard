@@ -4,8 +4,6 @@ import * as React from "react"
 import {
   AudioWaveform,
   Banknote,
-  CalendarDays,
-  ChartNoAxesColumn,
   Clipboard,
   Command,
   Contact,
@@ -104,11 +102,7 @@ const data = {
       url: "/pricing",
       icon: Gift,
     },
-    {
-      name: "Calender",
-      url: "/calender",
-      icon: CalendarDays,
-    },
+  
     {
       name: "To-Do",
       url: "/todo",
@@ -124,11 +118,7 @@ const data = {
       url: "/invoice",
       icon: Banknote,
     },
-    {
-      name: "Ui Elements",
-      url: "/uiElements",
-      icon: ChartNoAxesColumn,
-    },
+ 
     {
       name: "Team",
       url: "/team",

@@ -4,7 +4,6 @@ import { type LucideIcon } from "lucide-react";
 
 import {
   SidebarGroup,
-  SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
@@ -23,12 +22,11 @@ export function NavMain({
 }) {
   return (
     <SidebarGroup>
-      <SidebarGroupLabel>Platform</SidebarGroupLabel>
       <SidebarMenu>
         {items.map((item) => (
-          <SidebarMenuItem key={item.title}>
+          <SidebarMenuItem key={item.title} >
             <Link href={item.url}>
-              <SidebarMenuButton tooltip={item.title}>
+              <SidebarMenuButton tooltip={item.title} size={"default"} className="hover:bg-(--colorSkyBlue) hover:text-white transition-colors duration-200 ease-in">
                 {item.icon && <item.icon size={16} />}
                 <span>{item.title}</span>
               </SidebarMenuButton>

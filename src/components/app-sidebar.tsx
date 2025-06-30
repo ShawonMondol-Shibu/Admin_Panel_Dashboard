@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import * as React from "react"
+import * as React from "react";
 import {
   AudioWaveform,
   Banknote,
@@ -18,19 +18,20 @@ import {
   Rows3,
   Settings2,
   UserRound,
-} from "lucide-react"
+} from "lucide-react";
 
-import { NavMain } from "@/components/nav-main"
-import { NavProjects } from "@/components/nav-projects"
-import { NavUser } from "@/components/nav-user"
-import { TeamSwitcher } from "@/components/team-switcher"
+import { NavMain } from "@/components/nav-main";
+import { NavProjects } from "@/components/nav-projects";
+import { NavUser } from "@/components/nav-user";
+// import { TeamSwitcher } from "@/components/team-switcher";
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
   SidebarRail,
-} from "@/components/ui/sidebar"
+} from "@/components/ui/sidebar";
+import { TeamSwitcher } from "./team-switcher";
 
 // This is sample data.
 const data = {
@@ -67,7 +68,6 @@ const data = {
       title: "Products",
       url: "/products",
       icon: Grid2X2,
-      
     },
     {
       title: "Favorites",
@@ -93,7 +93,6 @@ const data = {
       title: "Settings",
       url: "/setting",
       icon: Settings2,
-      
     },
   ],
   Pages: [
@@ -102,7 +101,7 @@ const data = {
       url: "/pricing",
       icon: Gift,
     },
-  
+
     {
       name: "To-Do",
       url: "/todo",
@@ -118,7 +117,7 @@ const data = {
       url: "/invoice",
       icon: Banknote,
     },
- 
+
     {
       name: "Team",
       url: "/team",
@@ -130,12 +129,13 @@ const data = {
       icon: Grid3x3,
     },
   ],
-}
+};
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
+       
         <TeamSwitcher teams={data.teams} />
       </SidebarHeader>
       <SidebarContent>
@@ -148,5 +148,5 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>
-  )
+  );
 }
